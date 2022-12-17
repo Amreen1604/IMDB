@@ -1,0 +1,28 @@
+var cl = console.log;
+//alert('hello');
+"use strict";
+
+
+
+cl(movieArr);
+
+let movies = document.getElementById('movieContainer');
+cl(movies);
+
+let result = " ";
+movieArr.forEach(function(movievalue){
+	
+	result += `<div class="col-md-3">
+				<div class="card mb-4">
+					<figure class="movieCard">
+						<img src="movievalue.backdrop_path">
+						<figcaption class="text-white p-4 bg-dark"></figcaption>
+					</figure>
+				</div>
+	</div>`
+	
+});
+
+cl(result);
+
+movies.innerHTML = result;
